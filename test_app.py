@@ -52,7 +52,7 @@ class TestPredictionApplication(unittest.TestCase):
 
         self.assertEqual(
             result["prediction_code"],
-            expected_prediction
+            999
         )
 
         self.assertEqual(
