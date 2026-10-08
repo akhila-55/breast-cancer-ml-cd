@@ -61,7 +61,7 @@ def predict():
     prediction_code = int(model.predict(sample)[0])
 
     # The original dataset uses 0/1 encoded target values.
-    prediction = "MALIGNANT" if prediction_code == 0 else "BENIGN"
+    prediction = f"CLASS_{prediction_code}"
 
     return jsonify({
         "prediction": prediction,
